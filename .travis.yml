@@ -6,6 +6,8 @@ notifications:
 branches:
     only:
         - master
+script:
+    - sh nondex.sh
 
 after_success:
 - ./gradlew cobertura coveralls
